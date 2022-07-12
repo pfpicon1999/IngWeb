@@ -7,7 +7,7 @@
 
 body{
 	background: #f3f3f3;
-	font-family: sans-serif;
+	font-family: 'Georgia', 'Times New Roman';
 }
 .headerContainer, main, .boxCentrado{
 	background: #fff;
@@ -18,12 +18,31 @@ body{
 }
 
 .cabeceraPrincipal{
-	background-color: #ffffff;
+	background-color: #f7a923;
+	display: block;
+	text-align: right;
+	padding: 10px;
 }
 .cabeceraPrincipal h1{
 	color: #4C99D4;
 	padding: 10px 40px;
 	text-shadow: #000 3px 2px 2px;
+	align-items: center;
+	justify-content: center;
+	text-align: left;
+	
+}
+.cabeceraPrincipal a{
+	color: #5E7DE3;
+	text-decoration: none;
+	background: #1D1D1D;
+	padding: 4px 20px;
+	border-radius: 30px;
+	font-size: 20px;
+	margin: 10px;
+	align-items: right;
+	display: inline;
+	text-align: right;
 }
 .menuPrincipal{
 	background-color: #FCC27E;
@@ -83,7 +102,8 @@ body{
 	background-color: #07738A;
 	color: #fff;
 	padding: 0.5em 1em;
-	margin-bottom: 5px;
+	margin-bottom: 50px;
+	font-family: 'Times New Roman', Times, serif;
 }
 main{
 	padding: 1em 2em;

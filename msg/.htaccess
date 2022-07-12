@@ -1,0 +1,17 @@
+
+#Error 404 Configuración cuando no se encuentra una ruta en la app
+ErrorDocument 404 http://127.0.0.1/IngWeb/iwapp1/msg/pagina404.html
+
+#Error 400 La url/solicitud del usuario al acceder a nuestra web contiene una sintaxis incorrecta
+ErrorDocument 400 http://127.0.0.1/IngWeb/iwapp1/msg/pagina400.html
+
+#Error 500 Este tipo de error se da cuando el servidor es incapaz de determinar el tipo de error que está ocurriendo en la url visitada.
+ErrorDocument 500 http://127.0.0.1/IngWeb/iwapp1/msg/pagina500.html
+
+#Error 401 cuando ha fallado la autentificación en la url visitada
+ErrorDocument 401 http://127.0.0.1/IngWeb/iwapp1/msg/pagina401.html
+
+#Esconder extensión de lenguaje php
+AddType application/x/httpd-php .cool
+
+DirectoryIndex index.html index.htm index.php 

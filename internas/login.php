@@ -9,18 +9,18 @@
 <body>
 	<header class="cabeceraPrincipal">
 		<h1>Vilonaco Food</h1>
+		<a href="contactos.php">Registro</a>
+		<a href="login.php">Login</a>
 	</header>
 	<nav class="menuPrincipal">
 		<a href="../">Inicio</a>
 		<a href="">Empresa</a>
-		<a href="contactos.php">Registro</a>
 		<a href="listados.php">Listado</a>
-		<a href="login.php">Login</a>
 	</nav>
 	
 	<main>
 		<div class="boxCentrado">
-		<h2 class="h2Home">Ingeso al sistema</h2>
+		<h2 class="h2Home">Ingreso al sistema</h2>
 		<form method="post" action="../dll/validar.php">
 			<div class="grupoInput">
 				<label for="correo">Correo</label>

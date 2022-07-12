@@ -9,13 +9,14 @@
 <body>
 	<header class="cabeceraPrincipal">
 		<h1>Vilonaco Food</h1>
+		<a href="contactos.php">Registro</a>
+		<a href="login.php">Login</a>
 	</header>
 	<nav class="menuPrincipal">
 		<a href="../">Inicio</a>
 		<a href="">Empresa</a>
-		<a href="contactos.php">Registro</a>
 		<a href="listados.php">Listado</a>
-		<a href="login.php">Login</a>
+	
 	</nav>
 	
 	<main>
