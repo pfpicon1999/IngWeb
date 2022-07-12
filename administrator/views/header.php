@@ -28,6 +28,7 @@ include("../seguridad/seguridad.php");
 			<a href="dashboard.php">Dahsboard</a>
 			<a href="platos.php">Platos</a>
 			<a href="user.php">Usuarios</a>
+			<a href="pedido.php">Pedidos</a>
 			<div class="espacioMenu">&nbsp;</div>
 			<a href="">Perfil</a>
 			<a href="">Cerrar session</a>

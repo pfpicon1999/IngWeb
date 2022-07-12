@@ -131,6 +131,32 @@ class clase_mysqli{
 		echo "</table>";
 	}
 
+	function verconsultacrudpedido(){
+		echo "<table class='tablecud'>";
+		echo "<tr>";
+		for ($i=0; $i < $this->numcampos() ; $i++) { 
+			//echo "<td>".$this->nombrecampo($i)."</td>";
+			echo  "<td>".mysqli_fetch_field_direct($this->Consulta_ID, $i)->name."</td>";
+		}
+		echo  "<td>Actualizar</td>";
+		echo  "<td>Borrar</td>";
+		echo "</tr>";
+		while ($row=mysqli_fetch_array($this->Consulta_ID)) {
+			echo "<tr>";
+			for ($i=0; $i < $this->numcampos(); $i++) { 
+				//echo "<td>".utf8_encode($row[$i])."</td>";
+				echo "<td>".$row[$i]."</td>";
+			}
+			//echo  "<td><a href='#'>Borrar</a></td>";
+			//echo  "<td><a href='#'>Actualizar</a></td>";
+
+			echo "<td><a href='./plato_add.php?id_Plato=$row[0]&Editar'><img class='icono_pen' src='../images/pen.png' alt='' width='30%'></a></td>
+			<td><a href='#' onclick='preguntar($row[0])'><img class = 'icono_delete' src='../images/delete.png' alt='' width='40%'></a></td>";
+			echo "</tr>";
+		}
+		echo "</table>";
+	}
+
 	function consulta_lista(){
 		while ($row = mysqli_fetch_array($this->Consulta_ID)) {
 			for ($i=0; $i < $this->numcampos(); $i++) { 

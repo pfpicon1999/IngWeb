@@ -4,6 +4,8 @@
 	$control= new user_controller();
     include("../controller/plato_controller.php");
 	$controlplato= new plato_controller();
+    include("../controller/pedido_controller.php");
+	$controlpedido= new pedido_controller();
     
 //cambios usuarios
 if (isset($_POST['RegistrarUsuario'])) {
@@ -43,4 +45,23 @@ if (isset($_POST['EditarPlato'])) {
     echo "<script>location.href='dashboard.php'</script>";
 }
 
+//cambios pedidos
+//registrar pedido
+if (isset($_POST['RegistrarPedido'])) {
+    $controlpedido-> CreatePedido();
+    echo "<script>location.href='dashboard.php'</script>";
+}
+//eliminar pedido
+if(isset($_GET["id_Recurso"])  && isset($_GET["EliminarPedido"])){ 
+    $ID= $_GET["id_Recurso"];
+    $pedido = new PedidoModel();
+    $pedidoResponse = $pedido->DeletePedido($ID);
+	echo "<script>location.href='dashboard.php'</script>";
+}
+//editar pedido
+if (isset($_POST['EditarPlato'])) {
+    $ID= $_GET["id"];
+    $controlplato->  EditPlato($ID);
+    echo "<script>location.href='dashboard.php'</script>";
+}
 ?>
